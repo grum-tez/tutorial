@@ -8,7 +8,13 @@
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "React App",
+      "onAutoForward": "openPreview"
+    }
+  },
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
