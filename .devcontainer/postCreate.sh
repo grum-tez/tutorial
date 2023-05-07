@@ -8,3 +8,5 @@ sudo apt-get update -y \
 && yarn install \
 && yarn global add @completium/completium-cli \
 && completium-cli init \
+&& cd blockchain \
+&& completium-cli mockup init
