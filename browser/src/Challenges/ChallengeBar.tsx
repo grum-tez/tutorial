@@ -94,7 +94,6 @@ const ChallengeBar: React.FC = () => {
     </ListItem>
 
 
-
     <ListItem key="Poke Entrypoint callable">
   <ListItemIcon>
     {pokeCallable === 'pass' ? (
