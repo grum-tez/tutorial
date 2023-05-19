@@ -39,7 +39,7 @@ describe('[POKE_CONTRACT] Contract deployment', async () => {
 
 describe('[POKE_CONTRACT] Test Poke Entrypoint', async () => {
 
-  it("Count increments by one", async () => {
+  it("poke_count increments by one", async () => {
     const count_before = await poke_contract.get_poke_count()
     assert(count_before.equals(new Int(0)))
 

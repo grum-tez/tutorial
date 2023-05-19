@@ -1,9 +1,5 @@
 import React from 'react';
 import { useChallengesContext } from '../Challenges/ChallengesContext'
-import { useContract } from '../contexts/Contract';
-import { useContractAddress } from '../contexts/Settings';
-import { useIsConnected } from '../contexts/Beacon';
-
 
 interface PokeButtonProps {
   onClick: () => void;
@@ -11,18 +7,12 @@ interface PokeButtonProps {
 
 const Poker = () => {
 
-  // Related to testing - ignore this line
+  // The following line is associated with the challenge assessment. You can safely ignore it
   const { pokeEntrypointChallenge } = useChallengesContext()
-  // END testing block
-
-  const pokeContract = useContract()
-  const contractAddress = useContractAddress()
-  const isConnected = useIsConnected()
 
   const callPoke = async (): Promise<void> => {
     try {
-      await pokeContract.poke({});
-      //TODO: Ideally setPokeCallable would be triggered by watching the chain for a successful call, rather than the user having to input this themselves.
+      throw Error //Replace this line with your code to call the poke entrypoint
       pokeEntrypointChallenge("pass")
     } catch {
       pokeEntrypointChallenge("fail")
@@ -41,12 +31,11 @@ const Poker = () => {
   return (
   <div className="component">
   <h3>Poking Component</h3>
-  {isConnected() &&
   <>
- <p> The button below pokes the contract at address: <br/> {contractAddress}  </p>
+ <p> The button below pokes the contract at the following address: 
+   </p>
   <PokeButton onClick={callPoke}/>
   </>
-  }
   </div>)
 
 }

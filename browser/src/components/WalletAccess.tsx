@@ -1,44 +1,30 @@
 import React from 'react';
-import { useConnect, useDisconnect, useIsConnected, useWalletAddress } from '../contexts/Beacon'
 import { useChallengesContext } from '../Challenges/ChallengesContext';
 
 const WalletAccess: React.FC = () => {
+  //Ignore the next line which is related to the challenges
   const {setWalletConnects} = useChallengesContext();
-  const connect = useConnect();
-  const disconnect = useDisconnect()
-  const isConnected = useIsConnected()
-  const walletAddress = useWalletAddress() 
 
   const handleClick = async () => {
     try {
-      if (!isConnected()) {
-        await connect();
-        console.log("connect successful")
-      } else {
-        await disconnect();
-      }
+      throw Error
+      //Your code for handling connecting and disconnecting to the wallet goes here
     } catch (err) {
       console.error(err);
+      //Ignore the next line, this is related to the challengest
       setWalletConnects("fail")
-      console.log("CONNECTION FAILED")
     }
   };
 
   return (
     <div className="component">
     <h4>Wallet Access Component</h4>
-      {isConnected() ? (<>
-        <p> Connected to wallet at address: <br/>
-           {walletAddress}
-           </p>
-        <button onClick={handleClick}>Disconnect Wallet</button>
-        </>
-      ) : (<>
+
+        <>
         <p> No wallet connected
         </p>
         <button onClick={handleClick}>Connect Wallet</button>
         </>
-        )}
         <br/>
       </div>
   );

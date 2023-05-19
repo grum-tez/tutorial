@@ -14,7 +14,7 @@ export const [
       app_name: 'My DApp',
       endpoint: 'https://ghostnet.tezos.marigold.dev',
       network: NetworkType.GHOSTNET,
-      contract: 'KT1FE4Mj2XxYvu26B8GhgS6EXKqUPKbzZABi',
+      contract: 'KT...',
     })
     return settingsState
   },

@@ -13,9 +13,10 @@ import ListItemText from '@mui/material/ListItemText';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 import { CheckCircleOutline, Cancel } from '@mui/icons-material';
-import { useIsConnected } from '../contexts/Beacon';
+import { useDisconnect, useIsConnected } from '../contexts/Beacon';
 import { useChallengesContext } from './ChallengesContext';
 import { useContract } from '../contexts/Contract';
+
 
 const drawerWidth = 240
 const ChallengeBar: React.FC = () => {
@@ -27,7 +28,9 @@ const ChallengeBar: React.FC = () => {
   useEffect(() => {
     const checkConnection = async () => {
       console.log('Component mounted');
-      if (isConnected()) setWalletConnects("pass");
+      if (isConnected()) {
+        setWalletConnects("pass");
+      }
       if (contractExists === "unknown" || contractExists === "fail") {
       try {
         await pokeContract.get_balance()
@@ -45,6 +48,7 @@ const ChallengeBar: React.FC = () => {
     return () => {
       console.log('Component unmounted');
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isConnected(), useContract()]);
 
 
@@ -92,7 +96,6 @@ const ChallengeBar: React.FC = () => {
         <ListItemText primary="Wallet connects" />
 
     </ListItem>
-
 
 
     <ListItem key="Poke Entrypoint callable">
