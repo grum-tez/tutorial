@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import constate from "constate";
-// 1️⃣ Create a custom hook as usual
+
 function useTrackChallenges() {
 
+  const [walletConnects, setWalletConnects] = useState("unknown")
 
-//TODO: Create 3 way string interface - "unknown", "correct", "incorrect" 
-
-  const [walletConnects, setWalletConnects] = useState(false)
-
-  const [contractExists, setContractExists] = useState(false)
+  const [contractExists, setContractExists] = useState("unknown")
 
   const [pokeCallable, setPokeCallable] = useState("unknown")
+
+  const pokeEntrypointChallenge = (x:string) => {
+    setPokeCallable(x)
+  }
 
   return { 
     walletConnects,
@@ -18,9 +19,9 @@ function useTrackChallenges() {
     contractExists, 
     setContractExists,
     pokeCallable,
-    setPokeCallable
+    setPokeCallable,
+    pokeEntrypointChallenge
   };
 }
 
-// 2️⃣ Wrap your hook with the constate factory
 export const [ChallengesProvider, useChallengesContext] = constate(useTrackChallenges);

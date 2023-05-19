@@ -23,3 +23,5 @@ export const [
   (v) => v.network,
   (v) => v.contract
 )
+
+//contract: 'KT1FE4Mj2XxYvu26B8GhgS6EXKqUPKbzZABi

@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "generate-bindings": "for file in ../blockchain/contracts/*.arl; do echo $file; echo $(basename $file .arl); completium-cli generate binding-dapp-ts $file > src/dapp_bindings/$(basename $file .arl).ts | tee; done",
+    "generate-dapp-bindings": "for file in ../blockchain/contracts/*.arl; do echo $file; echo $(basename $file .arl); completium-cli generate binding-dapp-ts $file > src/dapp_bindings/$(basename $file .arl).ts | tee; done",
+    "watch-bind:": "chokidar '../blockchain/contracts/*.arl' -c 'npm run generate-dapp-bindings'",
     "browser-test": "ts-mocha -n loader=ts-node/esm --project tsconfig.json test/*.spec.ts"
   },
   "dependencies": {

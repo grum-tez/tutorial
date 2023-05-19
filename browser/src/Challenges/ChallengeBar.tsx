@@ -14,29 +14,28 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 import { CheckCircleOutline, Cancel } from '@mui/icons-material';
 import { useIsConnected } from '../contexts/Beacon';
-import { useChallengesContext } from '../contexts/Challenges';
+import { useChallengesContext } from './ChallengesContext';
 import { useContract } from '../contexts/Contract';
 
-
-
 const drawerWidth = 240
-const TestBar: React.FC = () => {
+const ChallengeBar: React.FC = () => {
   const isConnected = useIsConnected()
   const pokeContract = useContract()
-  console.log(pokeContract)
   const {walletConnects, setWalletConnects,  contractExists, setContractExists, pokeCallable } = useChallengesContext();
 
 //Check Wallet connects task
   useEffect(() => {
     const checkConnection = async () => {
       console.log('Component mounted');
-      if (isConnected()) setWalletConnects(true);
-      if (!contractExists) {
+      if (isConnected()) setWalletConnects("pass");
+      if (contractExists === "unknown" || contractExists === "fail") {
       try {
-        const PCbalance = await pokeContract.get_balance()
-        setContractExists(true)
+        await pokeContract.get_balance()
+        setContractExists('pass')
       } catch {
         console.log("Contract not found on chain. Check the address in contexts/settings.tsx is correct")
+        setContractExists('fail')
+
       }
     }
     };
@@ -62,31 +61,45 @@ const TestBar: React.FC = () => {
         <Toolbar />
         <Box sx={{ overflow: 'auto' }}>
         <Typography variant="h6" color="textSecondary" textAlign="left" sx={{ pl: 2, pt: 1, pb: 0 }}>
-  Task 1 
+  Challenge 1 
 </Typography>
         <List>
+
+        <ListItem key="Contract found on chain">
+        <ListItemIcon>
+        {contractExists === 'pass' ? (
+      <CheckCircleOutline style={{ color: 'green' }} />
+    ) : contractExists === 'fail' ? (
+      <Cancel style={{ color: 'red' }} />
+    ) : (
+      <HelpOutlineIcon/>
+    )}
+        </ListItemIcon>
+        <ListItemText primary="Contract found on chain" />
+
+    </ListItem>
+
         <ListItem key="Wallet connects">
         <ListItemIcon>
-        {walletConnects ? <CheckCircleOutline style={{ color: 'green' }} /> : <Cancel style={{ color: 'red' }} />}
+        {walletConnects === 'pass' ? (
+      <CheckCircleOutline style={{ color: 'green' }} />
+    ) : walletConnects === 'fail' ? (
+      <Cancel style={{ color: 'red' }} />
+    ) : (
+      <HelpOutlineIcon/>
+    )}
         </ListItemIcon>
         <ListItemText primary="Wallet connects" />
 
     </ListItem>
 
 
-    <ListItem key="Contract found on chain">
-        <ListItemIcon>
-        {contractExists ? <CheckCircleOutline style={{ color: 'green' }} /> : <Cancel style={{ color: 'red' }} />}
-        </ListItemIcon>
-        <ListItemText primary="Contract found on chain" />
-
-    </ListItem>
 
     <ListItem key="Poke Entrypoint callable">
   <ListItemIcon>
-    {pokeCallable === 'correct' ? (
+    {pokeCallable === 'pass' ? (
       <CheckCircleOutline style={{ color: 'green' }} />
-    ) : pokeCallable === 'incorrect' ? (
+    ) : pokeCallable === 'fail' ? (
       <Cancel style={{ color: 'red' }} />
     ) : (
       <HelpOutlineIcon/>
@@ -106,4 +119,4 @@ const TestBar: React.FC = () => {
   );
 };
 
-export default TestBar;
+export default ChallengeBar;

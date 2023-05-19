@@ -36,6 +36,25 @@ h1 {
   line-height: 1.1;
 }
 
+hr {
+  margin: 20px;
+  border: none;
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.87),
+    rgba(255, 255, 255, 0.87) 5px,
+    transparent 5px,
+    transparent 10px
+  );
+}
+
+.component {
+  border: 1px solid;
+  padding: 20px;
+  border-color: rgba(255, 255, 255, 0.87);
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
