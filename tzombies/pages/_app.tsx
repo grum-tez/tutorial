@@ -5,6 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { createTheme, ThemeProvider } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 import '../styles/globals.css'
+import { WalletProvider } from "../components/providers/WalletProvider"
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -23,7 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <WalletProvider>
       <Component {...pageProps} />
+      </WalletProvider>
     </ThemeProvider>
   )
 }

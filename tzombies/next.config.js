@@ -13,3 +13,4 @@ const nextConfig = {
 module.exports = nextConfig
 
 
+//NOTE TO SELF TRY AGAIN ON CODESPACES
