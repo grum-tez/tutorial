@@ -4,8 +4,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"dbaeumer.vscode-eslint",
-		"ritwickdey.LiveServer"
+		"dbaeumer.vscode-eslint"
 	]
     }
   },
