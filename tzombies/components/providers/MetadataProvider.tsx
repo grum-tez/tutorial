@@ -1,4 +1,4 @@
-import { createContext, useContext, useCallback } from 'React'
+import { createContext, useContext, useCallback } from 'react'
 
 interface ZombieMetadata {
   name: string
