@@ -149,46 +149,15 @@
     bignumber.js "^9.0.2"
     bs58check "^2.1.2"
 
-"@completium/archetype@0.4.12":
-  version "0.4.12"
-  resolved "https://registry.yarnpkg.com/@completium/archetype/-/archetype-0.4.12.tgz#38fd23db5029c07e3c6c276c04c868022dff1c5d"
-  integrity sha512-qBEp+9Eq6hNE3eDAGjrhtHo63NNlso7tutDAzm2X8fdpQgIUzs1fNc73aOwbvS6w5O3CzJZM3MAGuHYnlYWrCA==
-
 "@completium/archetype@0.4.16":
   version "0.4.16"
   resolved "https://registry.yarnpkg.com/@completium/archetype/-/archetype-0.4.16.tgz#7c68b0cd8a6baa5dbaccc3f1071229c2c87a9bb3"
   integrity sha512-d/SQr2JjzWQXMddzd21iRIiIaSeCsYiqCxtCU5KQ743jQXXlclQQ+smPl8r/9nfE/fvCVBL0jebQsQ1asIqLaw==
 
-"@completium/completium-cli@0.4.77":
-  version "0.4.77"
-  resolved "https://registry.yarnpkg.com/@completium/completium-cli/-/completium-cli-0.4.77.tgz#45d0f2da32c1496f6914afbef8091ba9c1f4659f"
-  integrity sha512-dMvp0vXMyUsARglHPx43lT9LXhnKQ5FDMiA/IGxZxVKdIwGj3xVxDqh+zn1ZuVz7WwFpRduK5IKJGrhNWNCbCw==
-  dependencies:
-    "@completium/archetype" "0.4.12"
-    "@completium/archetype-binder-ts" "^0.1.12"
-    "@taquito/michel-codec" "^15.0.0"
-    "@taquito/michelson-encoder" "^15.0.0"
-    "@taquito/signer" "^15.0.0"
-    "@taquito/taquito" "^15.0.0"
-    "@taquito/utils" "^15.0.0"
-    arg "^4.1.3"
-    bignumber.js "^9.0.1"
-    bip39 "^3.0.4"
-    enquirer "^2.3.6"
-    esm "^3.2.25"
-    execa "^4.0.3"
-    fractional "^1.0.0"
-    inquirer "^7.3.3"
-    keccak "^3.0.2"
-    minimatch ">=3.0.5"
-    pkg-install "^1.0.0"
-    request "^2.88.2"
-    tmp "^0.2.1"
-
-"@completium/completium-cli@~0.4.75":
-  version "0.4.82"
-  resolved "https://registry.yarnpkg.com/@completium/completium-cli/-/completium-cli-0.4.82.tgz#eb59bc2e018bb6a7ac2092debe488e8abeaf568e"
-  integrity sha512-LwoLNNLJpo9O0YWIHVpJuG+B+8qrNm2MP14OfdWfcoLvZf/t8x3d2/3Lro9lqBF88FDfftN8LEay9fUMkCQnxQ==
+"@completium/completium-cli@0.4.83", "@completium/completium-cli@~0.4.75":
+  version "0.4.83"
+  resolved "https://registry.yarnpkg.com/@completium/completium-cli/-/completium-cli-0.4.83.tgz#a64c61b075b317c8ccedab4b90a3cffd85f96fe5"
+  integrity sha512-LRLmlDbNywD95jqLvYYSiWZRHNM6CvNARD5IgA1w2aoxwFZBq3CiXe4sYW7LbOgM6QG3XN+1atIDJPkV6OkhGA==
   dependencies:
     "@completium/archetype" "0.4.16"
     "@completium/archetype-binder-ts" "^0.1.12"
@@ -638,9 +607,9 @@
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@rushstack/eslint-patch@^1.1.3":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.3.1.tgz#edbb85ff95f3be41eaa70c6d6ad6d8ba0a9c7e46"
-  integrity sha512-RkmuBcqiNioeeBKbgzMlOdreUkJfYaSjwgx9XDgGGpjvWgyaxWvDmZVSN9CS6LjEASadhgPv2BcFp+SeouWXXA==
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.3.2.tgz#31b9c510d8cada9683549e1dbb4284cca5001faf"
+  integrity sha512-V+MvGwaHH03hYhY+k6Ef/xKd6RYlc4q8WBx+2ANmipHJcKuktNcI/NgEsJgdSUF6Lw32njT6OnrRsKYCdgHjYw==
 
 "@sinclair/typebox@^0.25.16":
   version "0.25.24"
@@ -1302,10 +1271,10 @@
   version "0.3.1"
   resolved "https://codeload.github.com/ecadlabs/axios-fetch-adapter/tar.gz/167684f522e90343b9f3439d9a43ac571e2396f6"
 
-"@walletconnect/core@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@walletconnect/core/-/core-2.8.0.tgz#f694e1562413c4eb700f6b3a83fa7964342100c0"
-  integrity sha512-pl7x4sq1nuU0ixA9wF2ecjDecUzIauKr7ZwC29rs9qTcmDpxgJbbOdZwaSl+dJlf1bHC87adVLf5KAkwwo9PzQ==
+"@walletconnect/core@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@walletconnect/core/-/core-2.8.1.tgz#f74404af372a11e05c214cbc14b5af0e9c0cf916"
+  integrity sha512-mN9Zkdl/NeThntK8cydDoQOW6jUEpOeFgYR1RCKPLH51VQwlbdSgvvQIeanSQXEY4U7AM3x8cs1sxqMomIfRQg==
   dependencies:
     "@walletconnect/heartbeat" "1.2.1"
     "@walletconnect/jsonrpc-provider" "1.0.13"
@@ -1318,8 +1287,8 @@
     "@walletconnect/relay-auth" "^1.0.4"
     "@walletconnect/safe-json" "^1.0.2"
     "@walletconnect/time" "^1.0.2"
-    "@walletconnect/types" "2.8.0"
-    "@walletconnect/utils" "2.8.0"
+    "@walletconnect/types" "2.8.1"
+    "@walletconnect/utils" "2.8.1"
     events "^3.3.0"
     lodash.isequal "4.5.0"
     uint8arrays "^3.1.0"
@@ -1429,18 +1398,18 @@
     tslib "1.14.1"
 
 "@walletconnect/sign-client@^2.7.5":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@walletconnect/sign-client/-/sign-client-2.8.0.tgz#735dc8bf120242584fb2ff22c6a3d672c1fae1a1"
-  integrity sha512-+l9qwvVeUGk0fBQsgx6yb6hdGYt8uQ3a9jR9GgsJvm8FjFh1oUzTKqFnG7XdhCBnzFnbSoLr41Xe8PbN8qoUSw==
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@walletconnect/sign-client/-/sign-client-2.8.1.tgz#8c6de724eff6a306c692dd66e66944089be5e30a"
+  integrity sha512-6DbpjP9BED2YZOZdpVgYo0HwPBV7k99imnsdMFrTn16EFAxhuYP0/qPwum9d072oNMGWJSA6d4rzc8FHNtHsCA==
   dependencies:
-    "@walletconnect/core" "2.8.0"
+    "@walletconnect/core" "2.8.1"
     "@walletconnect/events" "^1.0.1"
     "@walletconnect/heartbeat" "1.2.1"
     "@walletconnect/jsonrpc-utils" "1.0.8"
     "@walletconnect/logger" "^2.0.1"
     "@walletconnect/time" "^1.0.2"
-    "@walletconnect/types" "2.8.0"
-    "@walletconnect/utils" "2.8.0"
+    "@walletconnect/types" "2.8.1"
+    "@walletconnect/utils" "2.8.1"
     events "^3.3.0"
 
 "@walletconnect/time@^1.0.2":
@@ -1450,10 +1419,10 @@
   dependencies:
     tslib "1.14.1"
 
-"@walletconnect/types@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@walletconnect/types/-/types-2.8.0.tgz#f8a5f09ee2b31abed231966e7e1eebd22be058a2"
-  integrity sha512-FMeGK3lGXFDwcs5duoN74xL1aLrkgYqnavWE0DnFPt2i1QmSUITU9c8f88EDh8uPXANd2WIYOItm0DVCNxLGGA==
+"@walletconnect/types@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@walletconnect/types/-/types-2.8.1.tgz#640eb6ad23866886fbe09a9b29832bf3f8647a09"
+  integrity sha512-MLISp85b+27vVkm3Wkud+eYCwySXCdOrmn0yQCSN6DnRrrunrD05ksz4CXGP7h2oXUvvXPDt/6lXBf1B4AfqrA==
   dependencies:
     "@walletconnect/events" "^1.0.1"
     "@walletconnect/heartbeat" "1.2.1"
@@ -1462,10 +1431,10 @@
     "@walletconnect/logger" "^2.0.1"
     events "^3.3.0"
 
-"@walletconnect/utils@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@walletconnect/utils/-/utils-2.8.0.tgz#c219e78fd2c35062cf3e37f84961afde8da9b9a1"
-  integrity sha512-Q8OwMtUevIn1+64LXyTMLlhH58k3UOAjU5b3smYZ7CEEmwEGpOTfTDAWrB3v+ZDIhjyqP94+8fuvKIbcVLKLWA==
+"@walletconnect/utils@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@walletconnect/utils/-/utils-2.8.1.tgz#1356f4bba7f8b6664fc5b61ce3497596c8d9d603"
+  integrity sha512-d6p9OX3v70m6ijp+j4qvqiQZQU1vbEHN48G8HqXasyro3Z+N8vtcB5/gV4pTYsbWgLSDtPHj49mzbWQ0LdIdTw==
   dependencies:
     "@stablelib/chacha20poly1305" "1.0.1"
     "@stablelib/hkdf" "1.0.1"
@@ -1475,7 +1444,7 @@
     "@walletconnect/relay-api" "^1.0.9"
     "@walletconnect/safe-json" "^1.0.2"
     "@walletconnect/time" "^1.0.2"
-    "@walletconnect/types" "2.8.0"
+    "@walletconnect/types" "2.8.1"
     "@walletconnect/window-getters" "^1.0.1"
     "@walletconnect/window-metadata" "^1.0.1"
     detect-browser "5.3.0"
@@ -1877,9 +1846,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001406:
-  version "1.0.30001502"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001502.tgz#f7e4a76eb1d2d585340f773767be1fefc118dca8"
-  integrity sha512-AZ+9tFXw1sS0o0jcpJQIXvFTOB/xGiQ4OQ2t98QX3NDn2EZTSRBC801gxrsGgViuq2ak/NLkNgSNEPtCr5lfKg==
+  version "1.0.30001503"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001503.tgz#88b6ff1b2cf735f1f3361dc1a15b59f0561aa398"
+  integrity sha512-Sf9NiF+wZxPfzv8Z3iS0rXM1Do+iOy2Lxvib38glFX+08TCYYYGR5fRJXk4d77C4AYwhUjgYgMsMudbh2TqCKw==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -2252,9 +2221,9 @@ end-of-stream@^1.1.0, end-of-stream@^1.4.1:
     once "^1.4.0"
 
 enhanced-resolve@^5.12.0:
-  version "5.14.1"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.14.1.tgz#de684b6803724477a4af5d74ccae5de52c25f6b3"
-  integrity sha512-Vklwq2vDKtl0y/vtwjSesgJ5MYS7Etuk5txS8VdKL4AOS1aUlD96zqIfsOSLQsdv3xgMRbtkWM8eG9XDfKUPow==
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.15.0.tgz#1af946c7d93603eb88e9896cee4904dc012e9c35"
+  integrity sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -4401,9 +4370,9 @@ semver@^6.3.0:
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
 semver@^7.3.7:
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
-  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
+  version "7.5.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.2.tgz#5b851e66d1be07c1cdaf37dfc856f543325a2beb"
+  integrity sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==
   dependencies:
     lru-cache "^6.0.0"
 
