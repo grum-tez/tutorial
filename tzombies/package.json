@@ -25,6 +25,8 @@
     "@taquito/signer": "16.1.2",
     "@taquito/taquito": "16.1.2",
     "@taquito/utils": "16.1.2",
+    "@wert-io/widget-initializer": "^4.0.0",
+    "@wert-io/widget-sc-signer": "^2.0.0",
     "luxon": "3.3.0",
     "next": "13.4.5",
     "react": "18.2.0",
@@ -47,5 +49,3 @@
     "typescript": "5.1.3"
   }
 }
-
-
