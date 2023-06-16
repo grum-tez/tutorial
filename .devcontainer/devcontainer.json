@@ -10,11 +10,10 @@
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [3000],
+  "forwardPorts": [3000, 20000],
   "portsAttributes": {
     "3000": {
-      "label": "React App",
-      "onAutoForward": "openPreview"
+      "label": "React App"
     }
   },
 

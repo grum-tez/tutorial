@@ -1,0 +1,1 @@
+alias ccli="npx completium-cli"
