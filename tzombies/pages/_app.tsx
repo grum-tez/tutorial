@@ -7,6 +7,7 @@ import '../styles/globals.css'
 import { WalletProvider } from '../components/providers/WalletProvider'
 import { MetadataProvider } from '../components/providers/MetadataProvider'
 import { TzombiesProvider } from '../components/providers/TzombiesProvider'
+import { WertProvider } from '../components/providers/WertProvider'
 
 export default function App({ Component, pageProps }: AppProps) {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
@@ -27,7 +28,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <WalletProvider>
         <MetadataProvider>
           <TzombiesProvider>
+            <WertProvider>
             <Component {...pageProps} />
+            </WertProvider>
           </TzombiesProvider>
         </MetadataProvider>
       </WalletProvider>

@@ -69,8 +69,11 @@ const useWertProviderContext = () => useContext(WertProviderContext)
     [Tezos, account, fa2, ipfsUriToGateway, tokenInfo]
   )
 
-
-  
+  return (
+    <WertProviderContext.Provider value={{ checkout }}>
+      {children}
+    </WertProviderContext.Provider>
+  )
 }
 
 export { WertProvider, useWertProviderContext }

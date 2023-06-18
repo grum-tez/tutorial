@@ -88,11 +88,11 @@ const handleClaim = useCallback(
       </Snackbar>
      <Typography variant="h4">Drops</Typography>
      <TokenList
-       tokens={[]}
-       actions={() => <React.Fragment/>}
-       onClick={() => {}}
-       extra={Extra}
-     />
+        tokens={[...tokenInfo?.keys()] ?? []}
+        actions={ClaimButton}
+        onClick={(id) => handleClaim(id)}
+        extra={Extra}
+      />
    </>
  )
 }
